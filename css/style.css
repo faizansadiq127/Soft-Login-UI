@@ -1,0 +1,104 @@
+:root {
+  --primary-color:   #3a3939;
+  --white: #FFFFFF;
+  --shadow: 0 2rem 6rem rgba(0,0,0,.1);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 5rem 20rem; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  width: 100%; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .header__logo span {
+    font-size: 3.6rem; }
+  .header__navigation-items {
+    display: flex;
+    list-style: none; }
+    .header__navigation-items--item {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+      background-color: var(--primary-color);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15), -4px -4px 4px rgba(255, 255, 255, 0.1); }
+      .header__navigation-items--item:hover {
+        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.15), inset -4px -4px 4px rgba(255, 255, 255, 0.1); }
+
+.f-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 63rem;
+  padding: 4rem 4rem 2rem;
+  margin: 10% 0% 5%;
+  background-color: var(--primary-color);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15), -4px -4px 4px rgba(255, 255, 255, 0.1); }
+  .f-container__heading h1 {
+    font-size: 2.4rem;
+    font-weight: bold; }
+  .f-container__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem; }
+    .f-container__form-input {
+      padding: 1rem;
+      color: var(--white);
+      width: 46rem;
+      height: 4.2rem;
+      border-radius: .5rem;
+      margin-top: 2rem;
+      border: none;
+      background-color: var(--primary-color);
+      box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.15), inset -4px -4px 4px rgba(255, 255, 255, 0.1); }
+      .f-container__form-input:active, .f-container__form-input:focus {
+        outline: none; }
+    .f-container__form-grp {
+      margin-top: 2rem; }
+      .f-container__form-grp-ckb {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5rem;
+        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.15), inset -4px -4px 4px rgba(255, 255, 255, 0.1); }
+      .f-container__form-grp label {
+        font-size: 1.4rem; }
+    .f-container__form-inputbutton {
+      color: var(--white);
+      width: 46rem;
+      height: 4.2rem;
+      margin-top: 3rem;
+      border-radius: .5rem;
+      border: none;
+      background-color: var(--primary-color);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15), -4px -4px 4px rgba(255, 255, 255, 0.1); }
+      .f-container__form-inputbutton:hover {
+        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.15), inset -4px -4px 4px rgba(255, 255, 255, 0.1); }
+  .f-container__bottomtext {
+    margin-top: 4rem; }
+
+.footer {
+  display: flex;
+  justify-content: center; }
